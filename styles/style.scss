@@ -1,0 +1,24 @@
+$header1: 7rem;
+$header2: 4rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$text: 1.6rem;
+$small-text: 1.4rem;
+$main-color: #007e72;
+
+@mixin flex($justify, $align, $direction){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@import "global";
+@import "intro";
+
+@media only screen and (max-width: 750px)  {
+    nav{
+        display: none;
+    }
+
+}
