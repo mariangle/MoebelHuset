@@ -5,6 +5,7 @@ $header4: 2rem;
 $text: 1.6rem;
 $small-text: 1.4rem;
 $main-color: #007e72;
+$dark-main: #004942;
 
 @mixin flex($justify, $align, $direction){
     display: flex;
@@ -14,11 +15,86 @@ $main-color: #007e72;
 }
 
 @import "global";
-@import "intro";
+@import "nav";
+@import "main";
 
-@media only screen and (max-width: 750px)  {
-    nav{
+
+@media only screen and (max-width: 1300px)  {
+    .featured-img{
+        @include flex(center, center, row);
+    }
+    .hero-info{
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        background: rgba(255, 255,255,0.7);
+        border-radius: 25px;
+        padding: 3rem 3rem;
+    }
+}
+
+@media only screen and (max-width: 900px)  {
+    .nav-links ul{
+        gap: 5rem;
+    }
+    .hero-info{
+        p{
+            padding: 0rem;
+        }
+    }
+    .contact{
+      
+        form{
+            input, button{
+                padding: 1rem 1rem;
+            }
+        }
+    }
+}
+// TABLET
+@media only screen and (min-width: 768px)  {
+    .nav-burger{
         display: none;
     }
+}
 
+@media only screen and (max-width: 768px)  {
+    .nav-links{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .featured-img{
+        img{
+            height: 300px;
+            width: 300px;
+        }
+    }
+
+    .icon-container{
+        margin-right: 1rem;
+        width: 30px;
+        height: 30px;
+        img{
+            height: 15px;
+            width: 15px;
+        }
+    }
+    .hero-info{
+        left: 50%;
+    }
+}
+@media only screen and (max-width: 450px)  {
+    .hero-info{
+        h1{
+            font-size: 5rem;
+
+        }
+    }
+    .footer-main, .footer-section{
+        padding: 2rem 0rem;
+    }
+    
 }

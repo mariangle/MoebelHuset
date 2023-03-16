@@ -17,49 +17,59 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
-    <title>MøbelDesign | Hjem</title>
+    <title>MøbelHuset | Hjem</title>
   </head>
   <body>
     <nav>
       <div class="nav-header">
-        <h1 id="logo"><a href="#home">MøbelHuset</a></h1>
+        <h1><a id="logo" href="#home">MøbelHuset</a></h1>
         <div class="nav-links">
           <ul>
             <li><a href="#home">Hjem</a></li>
-            <li><a href="">Katalog</a></li>
-            <li><a href="">Nyheder</a></li>
+            <li><a href="#">Katalog</a></li>
+            <li><a href="#">Nyheder</a></li>
             <li><a href="#contact">Kontakt</a></li>
           </ul>
         </div>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+        </div>
       </div>
     </nav>
+    <div class="nav-burger">
+      <ul class="burger-links">
+        <li><a href="#home">Hjem</a></li>
+        <li><a href="#">Katalog</a></li>
+        <li><a href="#">Nyheder</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </div>
+    </div>
     <main>
       <section class="hero" id="home">
-        <img src="./img/hero.jpg" alt="" />
+        <img src="./img/hero.jpg" alt="chair in living room" />
         <div class="hero-info">
-          <h1>Modern Elegance</h1>
+          <h1>Moderne Elegance</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-            <br />
-            facilis odio non beatae ad porro repellendus nihil voluptatibus
-            earum id.
+            Moderne Elegance kollektionen kombinerer elegant design med moderne elementer.<br> 
+            Med fokus på skarpe linjer og minimalistisk stil skaber vi en unik og stilren kollektion, <br> 
+            der passer perfekt til det moderne hjem.          
           </p>
           <button>SE KOLLEKTION</button>
         </div>
       </section>
       <section class="featured">
         <div class="featured-info">
-          <h2>Rustic Charm</h2>
+          <h2>Rustik Charme</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
-            facere maiores excepturi expedita. Ea autem sed quibusdam. Dolore
-            quos excepturi quaerat praesentium doloribus consectetur, ut eius
-            dolorem? Sequi, ea ab.
+            Rustik Charme møder hyggelig komfort i denne kollektion, der omfavner det enkle liv på landet. 
+            Med naturlige materialer og varme farver skaber vi en varm og indbydende atmosfære, der bringer naturen ind i dit hjem.
           </p>
           <a href=""><span>UDFORSK</span> MERE</a>
         </div>
         <div class="featured-img">
-          <img src="./img/featured.JPG" alt="" />
+          <img src="./img/featured.JPG" alt="green sofa chair" />
         </div>
       </section>
       <section class="collections">
@@ -67,112 +77,133 @@
           <h2>Populære Kollektioner</h2>
           <div class="line"></div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            optio <br />
-            harum mollitia odio distinctio reiciendis aliquid deleniti ab
-            nesciunt amet?
+            Find dine favoritter blandt vores mest populære kollektioner, der er skabt med fokus på både stil og funktionalitet. <br> 
+            Vores unikke designs vil give dit hjem karakter og personlighed, samtidig med at de imødekommer dine behov.
           </p>
         </div>
         <div class="gallery">
-          <img class="gallery1" src="./img/gallery1.png" alt="man in suit" />
-          <img class="gallery2" src="./img/gallery2.JPG" alt="lady in coat" />
           <img
-            class="gallery3"
-            src="./img/gallery3.jpg"
-            alt="lady in t-shirt"
+            class="gallery1"
+            src="./img/gallery1.png"
+            alt="yellow sofa chair"
           />
-          <img class="gallery4" src="./img/gallery4.jpg" alt="lady in jacket" />
+          <img
+            class="gallery2"
+            src="./img/gallery2.JPG"
+            alt="three wooden stools"
+          />
+          <img class="gallery3" src="./img/gallery3.jpg" alt="green sofa" />
+          <img
+            class="gallery4"
+            src="./img/gallery4.jpg"
+            alt="wooden dining table and chairs"
+          />
         </div>
       </section>
-      <footer>
-        <div class="footer-head">
-          <div class="footer-top">
-            <div class="footer-main">
-              <h3>MøbelHuset</h3>
-              <div class="line-div"></div>
-              <div class="contact">
-                <h4>Nyhedsbrev</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Recusandae, fugit?
-                </p>
-                <form action="">
-                  <div class="input">
-                    <input
-                      class="txt"
-                      type="text"
-                      name="name"
-                      placeholder="Din e-mailadresse.."
-                    /><button class="btn">Tilmeld</button>
-                  </div>
-                </form>
-              </div>
-              <ul class="socials">
-                <li>
-                  <a href="#"
-                    ><img
-                      src="./icons/icons8-instagram-50.png"
-                      alt="youtube-social-media"
-                  /></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><img
-                      src="./icons/icons8-facebook-50.png"
-                      alt="youtube-social-media"
-                  /></a>
-                </li>
-              </ul>
+      <button href="#home" id="top"
+        ><img src="./icons/icons8-up-16.png" alt="" />
+        <p>TO TOP</p>
+      </button>
+    </main>
+    <footer>
+      <div class="footer-head">
+        <div class="footer-top">
+          <div class="footer-main">
+            <h3>MøbelHuset</h3>
+            <div class="line-div"></div>
+            <div class="contact" id="contact">
+              <h4>Nyhedsbrev</h4>
+              <p>
+                Få de seneste nyheder og tilbud direkte i din indbakke ved at tilmelde dig vores nyhedsbrev. 
+                Bliv inspireret og hold dig opdateret med vores spændende kollektioner.
+              </p>
+              <form action="">
+                <div class="input">
+                  <input
+                    class="txt"
+                    type="text"
+                    name="name"
+                    placeholder="Din e-mailadresse.."
+                  /><button class="btn">Tilmeld</button>
+                </div>
+              </form>
             </div>
-            <div class="footer-section">
-              <h4>KUNDESERVICE</h4>
-              <ul>
-                <li><a href="#">Kontakt Os</a></li>
-                <li><a href="#">Levering</a></li>
-                <li><a href="#">Handelsbetingelser</a></li>
-                <li><a href="#">Persondatapolitik</a></li>
-                <li><a href="#">Finansiering</a></li>
-                <li><a href="#">Samtykkeerklæring</a></li>
-              </ul>
-            </div>
-            <div class="footer-section">
-              <h4>AKTUELT</h4>
-              <ul>
-                <li><a href="">Aviser og kataloger</a></li>
-                <li><a href="">Nyhedsbrev</a></li>
-                <li><a href="">Inspiration</a></li>
-              </ul>
-            </div>
-            <div class="footer-section">
-              <h4>KONTAKT OS</h4>
-              <ul>
-                <li>
-                  <div class="icon-container">
-                    <img src="./icons/icons8-email-64.png" alt="" />
-                  </div>
-                  <a href="">moebelhuset@eksempel.dk</a>
-                </li>
-                <li>
-                  <div class="icon-container">
-                    <img src="./icons/icons8-phone-50.png" alt="" />
-                  </div>
-                  <a href="">+45 80 80 40 42</a>
-                </li>
-                <li>
-                  <div class="icon-container">
-                    <img src="./icons/icons8-clock-50.png" alt="" />
-                  </div>
-                  <a href="">ÅBEN ALLE HVERDAGE </a>
-                </li>
-              </ul>
-            </div>
+            <ul class="socials">
+              <li>
+                <a href="#"
+                  ><img
+                    src="./icons/icons8-instagram-50.png"
+                    alt="instagram social media"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="./icons/icons8-facebook-50.png"
+                    alt="facebook social media"
+                /></a>
+              </li>
+            </ul>
           </div>
-          <div class="footer-bottom">
-            <div class="footer-divider"></div>
-            <p>MøbelHuset &#169; 2023</p>
+          <div class="footer-section">
+            <h4>KUNDESERVICE</h4>
+            <ul>
+              <li><a href="#">Kontakt Os</a></li>
+              <li><a href="#">Levering</a></li>
+              <li><a href="#">Handelsbetingelser</a></li>
+              <li><a href="#">Persondatapolitik</a></li>
+              <li><a href="#">Finansiering</a></li>
+              <li><a href="#">Samtykkeerklæring</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>AKTUELT</h4>
+            <ul>
+              <li><a href="#">Aviser og kataloger</a></li>
+              <li><a href="#">Nyhedsbrev</a></li>
+              <li><a href="#">Inspiration</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>KONTAKT OS</h4>
+            <ul>
+              <li>
+                <div class="icon-container">
+                  <img src="./icons/icons8-email-64.png" alt="email icon" />
+                </div>
+                <a href="#">moebelhuset@eksempel.dk</a>
+              </li>
+              <li>
+                <div class="icon-container">
+                  <img src="./icons/icons8-phone-50.png" alt="phone icon" />
+                </div>
+                <a href="#">+45 80 80 40 42</a>
+              </li>
+              <li>
+                <div class="icon-container">
+                  <img src="./icons/icons8-clock-50.png" alt="clock icon" />
+                </div>
+                <a href="#">ÅBEN ALLE HVERDAGE </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </footer>
-    </main>
+        <div class="footer-bottom">
+          <div class="footer-divider"></div>
+          <p>MøbelHuset &#169; 2023</p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
+      integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"
+      integrity="sha256-3arngJBQR3FTyeRtL3muAGFaGcL8iHsubYOqq48mBLw="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
   </body>
 </html>

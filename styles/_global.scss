@@ -21,7 +21,7 @@ html {
   label,
   input,
   p {    
-    color: rgb(102, 102, 102);
+    color: rgb(92, 92, 92);
     font-size: $text;
   }
   a{
@@ -51,13 +51,12 @@ html {
     scrollbar-color: rgba(155,155,155,0.5,) transparent;
 }
 *::-webkit-scrollbar{
-    width: 7px;
+    width: 10px;
 }
 *::-webkit-scrollbar-track{
     background: transparent;
 }
 *::-webkit-scrollbar-thumb{
-    background-color: #005249;
-    border-radius: 20px;
+    background-color: $dark-main;
     border: transparent
 }
